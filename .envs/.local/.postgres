@@ -2,4 +2,3 @@ POSTGRES_USER=admin
 POSTGRES_PASSWORD=FVjtA3gcYW6P_TMPm-9jeOGl8PwtUN
 POSTGRES_DB=postgres
 DB_PORT=5433
-POSTGRES_DB_HOST=us-west-2.80282bed-bdfc-48d3-a411-9daa862028bb.aws.yugabyte.cloud
