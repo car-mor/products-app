@@ -26,16 +26,17 @@
             <SearchIcon class="search-icon" />
           </div>
   
-          <!-- Botones de usuario y carrito -->
           <div class="user-actions">
-            <button class="icon-button">
-              <UserIcon />
-            </button>
-            <button class="icon-button cart-button">
-              <ShoppingCartIcon />
-              <span class="cart-count">{{ cartItemsCount }}</span>
-            </button>
-          </div>
+  <router-link to="/inicio-sesion" class="icon-button">
+    <UserIcon />
+  </router-link>
+  <RouterLink to="/carrito-compras">
+    <button class="icon-button cart-button">
+      <ShoppingCartIcon />
+      <span class="cart-count">{{ cartItemsCount }}</span>
+    </button>
+  </RouterLink>
+</div>
         </div>
       </div>
     </header>

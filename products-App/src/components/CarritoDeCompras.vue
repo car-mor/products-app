@@ -206,13 +206,21 @@
                     <span>{{ formatPrice(cart.total) }}</span>
                   </div>
 
-                  <button
-                    class="btn btn-primary w-100 mt-4"
-                    :disabled="!cart.items.length"
-                    @click="proceedToCheckout"
-                  >
-                    Proceder al Pago
-                  </button>
+                  <router-link
+  to="/metodo-pago"
+  class="w-100 mt-4"
+>
+  <button
+    class="btn btn-primary w-100"
+    :disabled="!cart.items.length"
+  >
+    Proceder al Pago
+  </button>
+</router-link>
+
+                  <router-link to="/home-screen" class="btn btn-outline-secondary w-100 mt-3">
+  Regresar a Inicio
+</router-link>
                 </div>
               </div>
             </div>
