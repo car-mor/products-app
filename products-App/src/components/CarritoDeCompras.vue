@@ -54,7 +54,7 @@
                           @click="decreaseQuantity(item)"
                           :disabled="item.quantity <= 1"
                         >
-                          <MinusCircle class="w-4 h-4" />
+                        <i class="bi bi-dash"></i>
                           <!-- Ícono de menos -->
                         </button>
                         <input
@@ -68,7 +68,7 @@
                           class="btn btn-sm btn-outline-secondary"
                           @click="increaseQuantity(item)"
                         >
-                          <PlusCircle class="w-4 h-4" />
+                        <i class="bi bi-plus"></i>
                           <!-- Ícono de más -->
                         </button>
                       </div>
@@ -231,9 +231,6 @@
 
 <script>
 import { defineComponent, ref, onMounted } from "vue";
-import PlusCircle from "vue-material-design-icons/PlusCircle.vue";
-import MinusCircle from "vue-material-design-icons/MinusCircle.vue";
-
 // Datos de prueba
 const mockData = {
   items: [
@@ -277,11 +274,6 @@ const mockData = {
 
 export default defineComponent({
   name: "ShoppingCart",
-
-  components: {
-    PlusCircle,
-    MinusCircle,
-  },
 
   setup() {
     const cart = ref({

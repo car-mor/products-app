@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import CarritoDeCompras from "@/components/CarritoDeCompras.vue";
 import ProductoCliente from "@/components/ProductoCliente.vue";
 import ProductosAdmin from "@/views/ProductosAdmin.vue";
+import HomeScreen from "@/views/HomeScreen.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,6 +25,11 @@ const router = createRouter({
     {
       path: "/:pathMatch(.*)*",
       redirect: "/carrito-compras", // Redirecciona cualquier ruta no válida
+    },
+    {
+      path: "/home-screen",
+      name: "HomeScreen",
+      component: HomeScreen, // El componente que quieres mostrar
     },
   ],
 });
